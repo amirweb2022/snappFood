@@ -1,0 +1,149 @@
+.header {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url("../image/d3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .logo-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 96%;
+    .logo {
+      width: 27%;
+      filter: brightness(0) invert(1);
+    }
+  }
+  .main-header {
+    @include felexcolumn;
+    justify-content: center;
+    width: 100%;
+    height: 38%;
+  }
+  .btn-search {
+    text-align: center;
+    padding-right: 0;
+    background-color: $color-red;
+    color: $color-white;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #9d0346;
+    }
+  }
+  .sub-header {
+    @include felexcenter;
+    width: 100%;
+    height: 35%;
+  }
+}
+.section-aplication {
+  @include felexcenter;
+  background-color: rgb(231, 230, 229);
+  width: 100%;
+  height: 120vh;
+  .box-aplication {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-white;
+    width: 956px;
+    height: 616px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba($color-black, 0.1);
+    border-radius: 4px;
+    .left {
+      @include felexcolumn;
+      width: 60%;
+      height: 100%;
+      // background-color: black;
+    }
+    .right {
+      width: 40%;
+      height: 100%;
+      .iphon {
+        position: relative;
+        bottom: 70px;
+      }
+    }
+  }
+}
+.main-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-color: $color-white;
+}
+.Populars {
+  @include felexcenter;
+  width: 100%;
+  height: 70vh;
+  background-color: $color-white;
+  .box-Populars {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    .left-Populars {
+      display: flex;
+      justify-content: left;
+      flex-direction: column;
+      margin: 0 100px;
+      width: 40%;
+      height: 100%;
+      // background-color: blueviolet;
+    }
+    .right-popular {
+      @include felexcenter;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 165vh;
+  background-color: rgb(231, 230, 229);
+  .taglink-city {
+    width: 90%;
+    height: 60vh;
+    margin-top: 90px;
+  }
+  .description-footer {
+    width: 90%;
+    height: 30vh;
+    margin-top: 0px;
+  }
+  .description-footer p {
+    font-size: 14px;
+    color: rgba($color-black, 0.4);
+    font-weight: normal;
+  }
+  .Licenses-box {
+    margin-top: 90px;
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .end-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    width: 100%;
+    height: 100%;
+  }
+}

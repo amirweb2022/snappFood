@@ -1,0 +1,36 @@
+$color-red:#ec0c6d;
+$color-white:#fff;
+$color-black:#000;
+$color-opacity-black:rgba(0, 0, 0, 0.2);
+$color-opacity2-black:rgba(0, 0, 0, 0.6);
+$font-sahel: Sahel, Tahoma;
+@font-face {
+    font-family: Sahel;
+    src: url("../font/Sahel.ttf") format("ttf") , url("../font/Sahel-Bold.woff") format("woff");
+    font-weight: normal;
+}
+@mixin felexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin felexcolumn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-sahel;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
